@@ -24,4 +24,5 @@ PORT=3001
 MONGO_CONNECTION_STRING="mongodb://my_user:my_password@my_server_host:my_server_port/"
 MONGO_DB_NAME=my_database_name
 AUTO_TRIM=true #Automaically trim databases
+RESPONSE_LIMIT=1000 #Max number of sources per request
 ```
