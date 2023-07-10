@@ -23,6 +23,9 @@ This server only supports HTTP2, therefore the reverse proxy of choosing must su
 PORT=3001
 MONGO_CONNECTION_STRING="mongodb://my_user:my_password@my_server_host:my_server_port/"
 MONGO_DB_NAME=my_database_name
-AUTO_TRIM=true #Automaically trim databases
 RESPONSE_LIMIT=1000 #Max number of sources per request
+```
+3. Run application in maintenance mode by adding the below env variable. Application will exit after completing maintenance. Run this at least once every minute. 
+```
+MAINTENANCE_MODE=true
 ```
